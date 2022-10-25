@@ -20,7 +20,7 @@ app.use("/api/users", userRoute)
 
 
 app.post("/api/users/signup", [
-    body("email").isEmail().withMessage("Email must be valid"),
+    body("email").isEmail().withMessage("Email must be valid1"),
     body("password")
     .trim()
     .notEmpty()
